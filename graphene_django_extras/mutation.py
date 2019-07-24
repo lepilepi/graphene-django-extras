@@ -47,7 +47,7 @@ class DjangoSerializerMutation(ObjectType):
         output_field_name=None,
         description="",
         nested_fields=(),
-        **options,
+        **options
     ):
 
         if not serializer_class:
