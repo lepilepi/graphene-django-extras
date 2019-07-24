@@ -258,7 +258,7 @@ class DjangoListObjectField(Field):
         extra_filter_meta=None,
         filterset_class=None,
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         if DJANGO_FILTER_INSTALLED:
