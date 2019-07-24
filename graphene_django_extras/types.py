@@ -78,7 +78,7 @@ class DjangoObjectType(ObjectType):
         filter_fields=None,
         interfaces=(),
         filterset_class=None,
-        **options,
+        **options
     ):
         assert is_valid_django_model(model), (
             'You need to pass a valid Django Model in {}.Meta, received "{}".'
@@ -156,7 +156,7 @@ class DjangoInputObjectType(InputObjectType):
         filter_fields=None,
         input_for="create",
         nested_fields=(),
-        **options,
+        **options
     ):
         assert is_valid_django_model(model), (
             'You need to pass a valid Django Model in {}.Meta, received "{}".'
@@ -246,7 +246,7 @@ class DjangoListObjectType(ObjectType):
         filter_fields=None,
         queryset=None,
         filterset_class=None,
-        **options,
+        **options
     ):
 
         assert is_valid_django_model(model), (
@@ -358,7 +358,7 @@ class DjangoSerializerType(ObjectType):
         filter_fields=None,
         description="",
         filterset_class=None,
-        **options,
+        **options
     ):
 
         if not serializer_class:
